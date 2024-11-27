@@ -1,0 +1,10 @@
+.products-list{
+    background-color: gray;
+}
+.products-detail1{
+    display: flex;
+}
+.products-detail2{
+    display: flex;
+    flex-direction: column;
+}

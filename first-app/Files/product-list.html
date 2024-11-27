@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="prodlist.css">
+</head>
+<body>
+    <div class="products-list" style="background-color: gray; width: 100%;">
+        <div class="products-detail1" style="display: flex; gap: 5%; justify-content: space-evenly;padding: 5%;background-color: yellowgreen; margin: 3% 0;">
+            <div class="product-image">
+                <img src={{%IMG%}} height="350" width="300" style="align-items: center;">
+            </div>
+            <div class="product-specs" style="justify-content: start;padding: 5%;background-color: whitesmoke;">
+                <h3>{{id}}</h3>
+                <p><span>Model Name:</span> {{Name}}</p>
+                <p><span>Description:</span>{{Description}}/A</p>
+                <p><span>Price:</span> {{Price}}</p>
+                <p><span>Category:</span> {{Category}}</p>
+                <div class="product-info">
+                    <a href="/product?id={{%ID%}}" class="btn btn-secondary">Show Details</a>
+                    <a href="/product">Back</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="products-detail2" style="display: flex; flex-direction: column;">
+            <div class="product-info">
+                <h4>Stock: {{Stock}}</h4>
+            </div>
+            <div class="product-info">
+                <h4>Rating: {{Rating}}</h4>
+            </div>
+            <div class="product-info">
+                <a href="/product?id={{%ID%}}" class="btn btn-secondary">Show Details</a>
+                <a href="/product">Back</a>
+            </div>
+        </div> -->
+    </div>  
+</body>
+</html>
